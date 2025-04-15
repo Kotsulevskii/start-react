@@ -19,8 +19,6 @@ function App() {
       <ItemSelector items = {['яблоко', 'банан', 'чурчхела']}
        onSelect={(elem) => alert(`Вы выбрали: ${elem}`)}/>
        <BlockColor color='red'/>
-       <BlockColor color='green'/>
-       <BlockColor color='yellow'/>
        <Weather/>
        <TempControl/>
        <SimpleForm/>

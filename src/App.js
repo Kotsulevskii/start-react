@@ -1,24 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import Greeting from './components/welcome';
+import MyButton from './components/Button';
+import ItemList from './components/List';
+import ItemSelector from './components/ItemSelector';
+import BlockColor from './components/BlockColor';
+import Weather from './components/testing';
+import TempControl from './components/TempControl';
+import SimpleForm from './components/SimpleForm';
+import SimpleSecond from './components/SimpleSecond';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Greeting name="Maksim"/>
+      <MyButton label="Жми меня" onClick={()=> alert("Меня нажали!")}/>
+      <MyButton label="Не жми меня" onClick={()=> alert("Меня всё-таки нажали!")}/>
+      <ItemList items = {['яблоко', 'банан', 'чурчхела', 'тыблоко']}/>
+      <ItemSelector items = {['яблоко', 'банан', 'чурчхела']}
+       onSelect={(elem) => alert(`Вы выбрали: ${elem}`)}/>
+       <BlockColor color='red'/>
+       <BlockColor color='green'/>
+       <BlockColor color='yellow'/>
+       <Weather/>
+       <TempControl/>
+       <SimpleForm/>
+       <SimpleSecond/>
+      
+    </>
+ 
   );
 }
 

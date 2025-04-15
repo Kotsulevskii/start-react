@@ -1,9 +1,9 @@
 import './App.css';
 import Greeting from './components/welcome';
-import MyButton from './components/Button';
+import MyButton from './components/HomeWork 15.04/Button';
 import ItemList from './components/List';
 import ItemSelector from './components/ItemSelector';
-import BlockColor from './components/BlockColor';
+import BlockColor from './components/HomeWork 15.04/BlockColor';
 import Weather from './components/testing';
 import TempControl from './components/TempControl';
 import SimpleForm from './components/SimpleForm';

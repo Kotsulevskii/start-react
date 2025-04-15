@@ -1,13 +1,17 @@
 import './App.css';
 import Greeting from './components/welcome';
-import MyButton from './components/HomeWork 15.04/Button';
+import MyButton from './components/Button';
 import ItemList from './components/List';
 import ItemSelector from './components/ItemSelector';
-import BlockColor from './components/HomeWork 15.04/BlockColor';
+import BlockColor from './components/BlockColor';
 import Weather from './components/testing';
 import TempControl from './components/TempControl';
 import SimpleForm from './components/SimpleForm';
 import SimpleSecond from './components/SimpleSecond';
+import UseEffect from './components/Test';
+import UseRef from './components/UseRef';
+import UseRefCounter from './components/UseRefCounter';
+import RedCounter from './components/UseContext';
 
 function App() {
   return (
@@ -23,7 +27,10 @@ function App() {
        <TempControl/>
        <SimpleForm/>
        <SimpleSecond/>
-      
+       <UseEffect/>
+       <UseRef/>
+       <UseRefCounter/>
+      <RedCounter/>
     </>
  
   );
